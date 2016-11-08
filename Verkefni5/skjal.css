@@ -1,0 +1,178 @@
+body {
+  background-color: black;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+header {
+  background-image: url("myndir/MuseHeader3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 150px; }
+
+section {
+  display: flex; }
+
+#I, #II, #III {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  border: 2px solid white;
+  padding: .3em;
+  font-size: 18px;
+  color: white;
+  height: 250px; }
+
+#I {
+  background-image: url("myndir/muse2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+#II {
+  background-image: url("myndir/muse1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+#III {
+  background-image: url("myndir/muse4.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+.einn, .tveir, .thrir {
+  display: none; }
+
+#I:hover .einn {
+  color: #72d3d3;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.8);
+  padding: 10px;
+  display: block;
+  height: auto;
+  position: relative;
+  top: 40%;
+  animation-name: anim1;
+  animation-duration: 1s; }
+
+#II:hover .tveir {
+  color: #72d3d3;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.8);
+  padding: 10px;
+  display: block;
+  height: auto;
+  position: relative;
+  top: 40%;
+  animation-name: anim1;
+  animation-duration: 1s; }
+
+#III:hover .thrir {
+  color: #72d3d3;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.8);
+  padding: 10px;
+  display: block;
+  height: auto;
+  position: relative;
+  top: 40%;
+  animation-name: anim1;
+  animation-duration: 1s; }
+
+li {
+  list-style-type: square; }
+
+#dagskra {
+  min-width: 250px; }
+
+#mapsec {
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin-top: 20px; }
+
+#Medlimir {
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+#Muse1, #Muse2 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0; }
+
+#Matti, #Dom, #Chris {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  height: 300px; }
+
+#Matti {
+  background-image: url("myndir/matt.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+#Dom {
+  background-image: url("myndir/Dom.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+#Chris {
+  background-image: url("myndir/Chris.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+#video {
+  margin-top: 20px;
+  width: 600px;
+  height: 350px; }
+
+hr {
+  width: 900px;
+  border-color: rgba(128, 128, 128, 0.8); }
+
+#skra {
+  min-width: 40%; }
+
+#Mynd {
+  width: 600px; }
+
+@keyframes anim1 {
+  from {
+    top: 35%; }
+  to {
+    top: 40%; } }
+@media screen and (max-width: 550px) {
+  section {
+    flex-direction: column;
+    -webkit-flex-direction: column; }
+
+  #menu {
+    height: 700px; } }
+@media screen and (max-width: 800px) {
+  #Mynd {
+    width: 500px; } }
+@media screen and (max-width: 600px) {
+  header {
+    background-size: 165%; }
+
+  #video {
+    width: 400px;
+    height: 250px; }
+
+  #Mynd {
+    width: 400px; } }
+@media screen and (max-width: 400px) {
+  #video {
+    width: 300px;
+    height: 200px; }
+
+  #Mynd {
+    width: 300px; } }
+
+/*# sourceMappingURL=skjal.css.map */

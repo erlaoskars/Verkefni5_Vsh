@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Viðburðurinn</title>
+	<link rel="stylesheet" type="text/css" href="skjal.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<header></header>
+
+	<section id="menu">
+		<div id="I" onclick="location.href='umMuse.html'">
+			<div class="einn">Um Muse</div>
+		</div>
+
+		<div id="II" onclick="location.href='SkraMig.html'">
+			<div class="tveir">Skrá mig</div>
+		</div>
+
+		<div id="III" onclick="location.href='index.html'">
+			<div class="thrir">Forsíða</div>
+		</div>
+	</section>
+
+	<section>
+		<div id="dagskra">
+			<h3>Dagskrá:</h3>
+			<p>	<li>18:00 - Húsið opnar</li><br>
+				<li>19:00 - Dj Birgiss</li><br>
+				<li>21:00 - Agent Fresco</li><br>
+				<li>22:00 - MUSE</li><br></p>
+		</div>
+			
+		<div>
+			<p>Tónleikarnir verða haldnir í Laugardalshöll þann 20. desember. Salurinn opnar kl. 18:00 en hleypt verður á veitingasvæði kl. 17:00.</p>
+
+			<p>Gestir á A svæði fá armbönd við innganginn sem gerir þeim kleift að hreyfa sig um á því svæði sem merkt er A eða B og á veitingasvæðinu.</p>
+
+			<p>Veitingasvæðið opnar kl 17.00. Þar verður hægt að kaupa veitingar í föstu og fljótandi formi. Harmageddon piltar halda uppi stuðinu með skemmtilegu rokki.</p>
+
+			<p>Dj Viktor Birgiss og Agent fresco munu hita mannskapinn upp fyrir tónleikana, Dj Birgiss mun byrja að spila kl. 19:00 og á eftir honum kl. 20:30 mun Agent Fresco stíga á svið.</p>
+
+			<p>Að lokum hvetjum við fólk til að mæta snemma til að sleppa við langar raðir.</p>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="mapsec">
+		<h3>Staðsetning:</h3><br>
+		<div id="map" style="width:100%;height:450px"></div>
+	</section>
+	
+	<script>
+	function myMap() {
+		var myCenter = new google.maps.LatLng(64.1402,-21.8767);
+	 	var mapCanvas = document.getElementById("map");
+	  	var mapOptions = {
+	    center: myCenter,
+	    zoom: 15
+	  	}
+	  	var map = new google.maps.Map(mapCanvas, mapOptions);
+	  	var marker = new google.maps.Marker({position:myCenter});
+  		marker.setMap(map);
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
+</html>
